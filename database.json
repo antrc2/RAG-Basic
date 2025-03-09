@@ -1,0 +1,191 @@
+[
+    {
+        "page_content": "Conceive Design Implement Operate\nTHỰCHỌC–THỰCNGHIỆP\nhttp://www.poly.edu.vn\nT\nỔNG\n QUAN\nVỀ\nV\nUE\n.\nJS",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "M\nỤC\nTIÊU\nNắm được các khái niệm cơ bản về Vue.js\nCài đặt môi trường phát triển Vue.js với thư viện Vitejs\nGiới thiệu về các cú pháp trong Vue.js\nHiểu được cách sử dụng Bootstrap để tạo giao diện \ntrong Vue",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "N\nỘI\nDUNG\nFramework là gì?\nGiới thiệu về Framework VueJS\nCàiđặt môitrường phát triển\nTạovàthực thiProject vớiVue.Js\nCài đặt và sử Bootstrap trong Vuejs\nGiới thiệu một vài cú pháp trong VueJS",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "P\nHẦN\n 1: \nT\nỔNG\n QUAN\nVỀ\nVUEJS",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "F\nRAMEWORK\n LÀ\nGÌ\n?\n❑Framework là bộ công cụ lập trình.\n❑Giúp tổ chức và quản lý mã nguồn tốt hơn\n❑Tiết kiệm thời gian và công sức khi phát triển website\n❑Giúp cải thiện tốc độ tải và phản hồi của ứng dụng.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "VUE\n.\nJS\n \nLÀ\n \nGÌ\n?\n❑Vue (phát âm /vjuː/, như “ view ”) là \nmột framework JavaScript \n❑Dùng để xây dựng các giao diện \nngười dùng (UI).\n❑Cú pháp đơn giản và thân thiện với \nngười mới bắt đầu.\n❑Sử dụng Virtual DOM  để tối ưu \nhiệu năng ứng dụng",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "T\nẠI\n \nSAO\n \nDÙNG\n  \nVUEJS\n ?\nHTML/CSS/JS \ntách  biệtReactive Data \nBindingSingle -File \nComponentsLàm  việc tốt với \nBack -end",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "LỊCH\n \nSỬ\n \nPHÁT\n  \nTRIỂN\n❑VueJS được tạo bởi Evan You, \ncựu nhân viên Google\n❑VueJS bắt đầu phát triển vào \nnăm 2013\n❑Ra mắt phiên bản đầu tiên chính \nthức  năm 2014\n❑Phiên bản mới nhất tính đến thời \nđiểm hiện tại (7/2024) là v3.4.33",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "V\nUE\n \nHOẠT\n  \nĐỘNG\n  \nNHƯ\n \nNÀO\n?\n❑Vue.js tự động đồng bộ dữ liệu giữa Model và View \nthông qua ViewModel, giúp mã nguồn dễ bảo trì và \nphát triển hơn.  Mô hình này được gọi là MVVM\n❑View : Giao diện người dùng\n❑ViewModel :\n➢Data Bindings: Kết nối dữ liệu từ Model với View.\n➢DOM Listeners: Theo dõi sự kiện trên DOM và cập \nnhật Model.\n❑Model : Chứa dữ liệu.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "M\nÔI\n \nTRƯỜNG",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "THIẾT\n  \nLẬP\n \nMÔI\n \nTRƯỜNG\n  \nNODEJS\n❑Truy cập: https://nodejs.org\n❑Tải và cài đặt",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "T\nẠO\n \nMỘT\n \nỨNG\n \nDỤNG\n  \nVUE\n \n❑Cách 1: CDN (Content delivery Network)\n❑Tạo file index.html và nhúng link sau ở đầu file\n➢Xem ví dụ<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nÀI\n \nĐẶT\n \nMÔI\n \nTRƯỜNG\n  \nVUEJS\nCách 2: Sử dụng NPM cài đặt Vitejs\n❑Vitejs là công cụ để tạo 1 project \nVuejs  cơ bản và có hiệu suất cao\n❑Do chính tác giả Vue tạo ra\n❑Sử dụng npm để tải Vitejs\n❑Sử dụng Terminal (hoặc Command \nPrompt):\nnpm create vue@latest front -end-framework",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nÀI\n \nĐẶT\n \nMÔI\n \nTRƯỜNG\n  \nVUEJS\n❑Lệnh này sẽ cài đặt và thực thi create -vue, công cụ tạo \ndự án chính thức của Vue. \n❑Bạn sẽ được yêu cầu chọn các tính năng tùy chọn như \nhình sau.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nÀI\n \nĐẶT\n \nMÔI\n \nTRƯỜNG\n  \nVUEJS\n❑Sử dụng Terminal VSC:\n❑Bật trình duyệt\ncd front -end-framework\nnpm install\nnpm run dev\nTruy cập thư mục\nCài đặt các thư viện\nChạy ứng dụng Vue",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "T\nỔ\n \nCHỨC\n  \nCODE\n  \nTRONG\n  \nVUEJS\nChứa  mã nguồn chính \ncủa ứng dụng\nCác component con\nFile cấu hình vitejsChứa các module và \ndependencies\nRoot component",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "TẠO\n \nAPPLICATION\n  \nINSTANCE\n❑Mọi ứng dụng Vue đều bắt đầu bằng việc tạo một \napplication instance mới với hàm createApp :",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "ROOT\n  \nCOMPONENT\n❑Thành phần gốc(root component) là thành phần đầu tiên \ntrong một ứng dụng Vue.\n❑Chứa các thành phần con và là điểm khởi đầu của ứng \ndụng.\n❑Được truyền vào hàm createApp để tạo ra ứng dụng.\n❑Ví dụ: App.vue thường là thành phần gốc.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nẤU\n \nTRÚC\n  \nFILE\n \nTRONG\n  \nVUE\n \n3\n➢<script setup> : Đơn giản hóa khai báo và sử dụng dữ \nliệu trong Vue 3.\n➢<template> : Định nghĩa cấu trúc giao diện của thành \nphần bằng HTML.\n➢<style scoped> : Áp dụng CSS chỉ cho thành phần hiện \ntại.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "CHẠY\n  \nỨNG\n \nDỤNG\n❑Truy cập file App.vue  cập nhật code sau và lưu lại.\n➢Xem ví dụ",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "P\nHẦN\n 2: \nS\nTYLE\n VÀ\nT\nEMPLATE\n S\nYNTAX",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "B\nOOTSTRAP\nSử dụng framework css Bootstrap ta thực hiện 2 bước\n➢Cài đặt Bootstrap:  npm i bootstrap\n➢Để n húng thư viện bootstrapp vào dự án  vue:\nMở tệp main.js  và thêm các dòng sau:\n➢Xem ví dụ",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "B\nOOTSTRAP\nKiểm tra bootstrap có hoạt động chưa?\nMở file App.vue trong thư mục app và cập nhật  code như sau:\n➢Xem ví dụ",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "CÚ\n \nPHÁP\n  \nTEMPLATE\n  \nTRONG\n  \nVUE\n❑Vue sử dụng cú pháp mẫu dựa trên HTML cho phép bạn \nliên kết một cách khai báo giữa DOM được render với dữ \nliệu của của đối tượng Vue bên dưới\n❑Hình thức ràng buộc dữ liệu cơ bản nhất là text \ninterpolation \n❑Cú pháp “mustache” với hai dấu ngoặc. :\n          <span>Message: {{ msg }}</span>",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nẤU\n \nTRÚC\n  \nTHÀNH\n  \nPHẦN\n  \nVUE\n \n3\n➢<script setup> : Đơn giản hóa khai báo và sử dụng dữ \nliệu trong Vue 3.\n➢<template> : Định nghĩa cấu trúc giao diện của thành \nphần bằng HTML.\n➢<style scoped> : Áp dụng CSS chỉ cho thành phần hiện \ntại.",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "V\nÍ\n \nDỤ\nDữ liệu kiểu chuỗi\n➢Xem Ví dụ<script  setup >\nconst  courseName = \"Framework Vue 3\" ;\nconst  courseLevel = \"Nâng cao\" ;\nconst  courseTime = 30; // giờ\nconst  courseIsActive = true ;\n</script>\n<template>\n<div  class =\"container my -5\">\n<h1 class =\"display -4 mb -3\">Thông tin: </h1>\n<ul class =\"list-group\" >\n<li class =\"list-group -item\" >\nTên khóa học: <strong> {{courseName }}</strong>\n</li>\n<liclass =\"list-group -item\" >Cấp độ: {{ courseLevel }}</li>\n<liclass =\"list-group -item\" >Thời gian: {{ courseTime }} giờ </li>\n<liclass =\"list-group -item\" >\nTrạng thái: {{ courseIsActive ? \"Đang mở\" : \"Đã đóng\" }}\n</li>\n</ul>\n</div>\n</template>",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "C\nÁC\n \nTEMPLATE\n  \nSYNSTAX\n  \nKHÁC\nNgoài ra còn rất nhiều cú pháp khác như:\n❖Attribute Binding: v-bind \n❖Conditional Rendering: v-if, v-else, v -else-if\n❖List Rendering: v-for\n❖Two-way Binding: v-model\n❖Event Handling: v-on\n❖Conditional Display: v-show\n❖Class Binding: v-bind:class\n❖Style Binding: v-bind:style\nChúng ta sẽ vào chi tiết ở các bài tiếp theo",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "NỘI\n \nDUNG\nFramework là gì?\nGiới thiệu về Framework VueJS\nMôi trường  phát triển\nCài đặt\nTạo và thực thi Project với Vue.Js\nKiến trúc tổ chức  của Vue.Js\nCài đặt và sử Bootstrap trong Vuejs\nGiới thiệu một vài cú pháp trong VueJS",
+        "metadata": {
+            "source": "datasets/a.pdf"
+        }
+    },
+    {
+        "page_content": "| Danh sách các thành viên trong CLB BeeIT   | Unnamed: 1       | Unnamed: 2   | Unnamed: 3   | Unnamed: 4             | Unnamed: 5    | Unnamed: 6                                              |\n|:-------------------------------------------|:-----------------|:-------------|:-------------|:-----------------------|:--------------|:--------------------------------------------------------|\n| STT                                        | Họ và tên        | Mã SV        | SDT          | Email                  | Chức vụ       | Link Facebook                                           |\n| 1                                          | Nguyễn Minh Tuấn | PH53694      | 0958461315   | mativi2005@gmail.com   | Chủ nhiệm     | https://www.facebook.com/profile.php?id=100027493113100 |\n| 2                                          | Nguyễn Ngọc An   | PH53674      | 0838411897   | antrc2gamer@gmail.com  | Phó chủ nhiệm | https://www.facebook.com/antrc2                         |\n| 3                                          | Trần Văn Hòa     | PH53701      | 0978543123   | hoatran.it@gmail.com   | Thành viên    | https://www.facebook.com/tran.van.hoa.fake              |\n| 4                                          | Lê Thị Thanh     | PH53689      | 0812345678   | lethanthanh@gmail.com  | Thành viên    | https://www.facebook.com/le.thi.thanh.fake              |\n| 5                                          | Phạm Đức Duy     | PH53715      | 0934567891   | duypham.it@gmail.com   | Thành viên    | https://www.facebook.com/pham.duc.duy.fake              |\n| 6                                          | Bùi Hữu Nghĩa    | PH53688      | 0905123456   | nghia.beeit@gmail.com  | Thành viên    | https://www.facebook.com/bui.huu.nghia.fake             |\n| 7                                          | Đặng Thị Hồng    | PH53722      | 0987456123   | hongdang@gmail.com     | Thành viên    | https://www.facebook.com/dang.thi.hong.fake             |",
+        "metadata": {
+            "source": "datasets/Danh sách các thành viên trong CLB BeeIT.xlsx",
+            "sheet_index": 0
+        }
+    },
+    {
+        "page_content": "| 6                                          | Bùi Hữu Nghĩa    | PH53688      | 0905123456   | nghia.beeit@gmail.com  | Thành viên    | https://www.facebook.com/bui.huu.nghia.fake             |\n| 7                                          | Đặng Thị Hồng    | PH53722      | 0987456123   | hongdang@gmail.com     | Thành viên    | https://www.facebook.com/dang.thi.hong.fake             |\n| 8                                          | Nguyễn Anh Khoa  | PH53677      | 0856124789   | khoanguyen@gmail.com   | Thành viên    | https://www.facebook.com/nguyen.anh.khoa.fake           |\n| 9                                          | Hồ Minh Phúc     | PH53733      | 0968745123   | phucho.it@gmail.com    | Thành viên    | https://www.facebook.com/ho.minh.phuc.fake              |\n| 10                                         | Võ Quỳnh Như     | PH53745      | 0921346578   | nhu.voqn@gmail.com     | Thành viên    | https://www.facebook.com/vo.quynh.nhu.fake              |\n| 11                                         | Trần Nhật Minh   | PH53754      | 0897465123   | minhtran2004@gmail.com | Thành viên    | https://www.facebook.com/tran.nhat.minh.fake            |\n| 12                                         | Phan Văn Tùng    | PH53695      | 0912456789   | tungphan.it@gmail.com  | Thành viên    | https://www.facebook.com/phan.van.tung.fake             |\n| 13                                         | Nguyễn Thị Hoa   | PH53767      | 0876543123   | hoanguyen@gmail.com    | Thành viên    | https://www.facebook.com/nguyen.thi.hoa.fake            |\n| 14                                         | Lý Hoàng Long    | PH53788      | 0987123456   | longly.it@gmail.com    | Thành viên    | https://www.facebook.com/ly.hoang.long.fake             |\n| 15                                         | Đoàn Minh Tuấn   | PH53801      | 0865123789   | tuandoan2003@gmail.com | Thành viên    | https://www.facebook.com/doan.minh.tuan.fake            |",
+        "metadata": {
+            "source": "datasets/Danh sách các thành viên trong CLB BeeIT.xlsx",
+            "sheet_index": 0
+        }
+    },
+    {
+        "page_content": "| 14                                         | Lý Hoàng Long    | PH53788      | 0987123456   | longly.it@gmail.com    | Thành viên    | https://www.facebook.com/ly.hoang.long.fake             |\n| 15                                         | Đoàn Minh Tuấn   | PH53801      | 0865123789   | tuandoan2003@gmail.com | Thành viên    | https://www.facebook.com/doan.minh.tuan.fake            |\n| 16                                         | Tạ Hồng Sơn      | PH53790      | 0956741234   | sonta.it@gmail.com     | Thành viên    | https://www.facebook.com/ta.hong.son.fake               |\n| 17                                         | Phạm Thanh Hằng  | PH53778      | 0934895123   | hangpham@gmail.com     | Thành viên    | https://www.facebook.com/pham.thanh.hang.fake           |\n| 18                                         | Đinh Ngọc Lâm    | PH53812      | 0845632197   | lamdinhn@gmail.com     | Thành viên    | https://www.facebook.com/dinh.ngoc.lam.fake             |\n| 19                                         | Trương Hải Nam   | PH53822      | 0912349876   | namtruong.it@gmail.com | Thành viên    | https://www.facebook.com/truong.hai.nam.fake            |\n| 20                                         | Mai Thị Cẩm Ly   | PH53833      | 0978654123   | lymai@gmail.com        | Thành viên    | https://www.facebook.com/mai.thi.cam.ly.fake            |",
+        "metadata": {
+            "source": "datasets/Danh sách các thành viên trong CLB BeeIT.xlsx",
+            "sheet_index": 0
+        }
+    }
+]
