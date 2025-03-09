@@ -27,7 +27,7 @@ headers = {"Content-Type": "application/json"}
 # embedding_model_path = "nomic-embed-text-v1.5.f16.gguf"
 faiss_name = "faiss_index.index"
 database_json = 'database.json'
-api_url = "https://b154-34-87-3-101.ngrok-free.app/v1"
+api_url = "http://127.0.0.1:5555/v1"
 llm_embedding = OpenAI(base_url=api_url,api_key="hehe")
 embedding_name = llm_embedding.models.list().data[0].id
 base_url = "https://0b22-34-141-165-187.ngrok-free.app/v1"
@@ -215,20 +215,20 @@ if not (os.path.exists(faiss_name) and os.path.exists(database_json)):
     db_json = dataset_path_to_database(dataset_path)
     add_to_database(db_json)
 # print(embeddingText("hello world"))
-# message = "VueJS là gì"
-# messages = [
-#     {
-#         "role": "system",
-#         'content': "Bạn là một trợ lí ảo"
+message = "VueJS là gì"
+messages = [
+    {
+        "role": "system",
+        'content': "Bạn là một trợ lí ảo"
 
-#     },
-#     {
+    },
+    {
 
-#         'role': "user",
-#         'content': message
-#     }
-# ]
-# print(chat(messages))
+        'role': "user",
+        'content': message
+    }
+]
+print(chat(messages))
 
 
 # @app.post("/")
