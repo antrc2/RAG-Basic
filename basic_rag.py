@@ -1,4 +1,4 @@
-import llama_cpp
+# import llama_cpp
 import pandas as pd
 from tabulate import tabulate
 from langchain.text_splitter import CharacterTextSplitter
@@ -24,18 +24,23 @@ app.add_middleware(
 )
 
 headers = {"Content-Type": "application/json"}
-embedding_model_path = "nomic-embed-text-v1.5.f16.gguf"
+# embedding_model_path = "nomic-embed-text-v1.5.f16.gguf"
 faiss_name = "faiss_index.index"
 database_json = 'database.json'
-api_url = "https://0b22-34-141-165-187.ngrok-free.app/v1"
+api_url = "https://b154-34-87-3-101.ngrok-free.app/v1"
+llm_embedding = OpenAI(base_url=api_url,api_key="hehe")
+embedding_name = llm_embedding.models.list().data[0].id
+base_url = "https://0b22-34-141-165-187.ngrok-free.app/v1"
 dataset_path = 'datasets'
-llm_chat = OpenAI(base_url=api_url,api_key="hehe")
-model_name = llm_chat.models.list().data[0].id
-llm_embedding = llama_cpp.Llama(embedding_model_path,embedding=True,n_ctx=2048,n_gpu_layers=-1)
+# llm_chat = OpenAI(base_url=base_url,api_key="hehe")
+# model_name = llm_chat.models.list().data[0].id
 
 def embeddingText(text):
-    response = (llm_embedding.create_embedding(text)['data'][0]["embedding"])
-    return response
+    response = llm_embedding.embeddings.create(
+        input=text,
+        model=embedding_name
+    )
+    return response.data[0].embedding
 def text_split(docs):
     text_splitter = CharacterTextSplitter(
         chunk_size=2048, 
@@ -167,24 +172,24 @@ def add_to_database(documents):
         return True
     except:
         return False
-def chat_with_vLLM(messages):
+# def chat_with_vLLM(messages):
     
-    response = llm_chat.chat.completions.create(
-    model=model_name,
-    messages=messages,
-    max_tokens=2048,
-    temperature=0.2,
-    stream=True
-    )
-    # generated_text = ""
-    # print("BeeAI: ",end="")
-    for res in response:
-        # print(res)
-        text = res.choices[0].delta.content
-        if(text):
-            # generated_text +=text
-            # yield generated_text
-            yield text
+#     response = llm_chat.chat.completions.create(
+#     model=model_name,
+#     messages=messages,
+#     max_tokens=2048,
+#     temperature=0.2,
+#     stream=True
+#     )
+#     # generated_text = ""
+#     # print("BeeAI: ",end="")
+#     for res in response:
+#         # print(res)
+#         text = res.choices[0].delta.content
+#         if(text):
+#             # generated_text +=text
+#             # yield generated_text
+#             yield text
 def chat(messages):
         question = ""
         for i in range(1,len(messages),2):
@@ -204,12 +209,12 @@ def chat(messages):
         messages[0]['content'] = prompt
         
         print(messages)
-        return chat_with_vLLM(messages)
+        # return chat_with_vLLM(messages)
 
 if not (os.path.exists(faiss_name) and os.path.exists(database_json)):
     db_json = dataset_path_to_database(dataset_path)
     add_to_database(db_json)
-
+# print(embeddingText("hello world"))
 # message = "VueJS là gì"
 # messages = [
 #     {
@@ -226,20 +231,20 @@ if not (os.path.exists(faiss_name) and os.path.exists(database_json)):
 # print(chat(messages))
 
 
-@app.post("/")
-async def call_api(request: Request):
-    messages = await request.json()
-    message = messages['messages']
-    return StreamingResponse(
-        chat(message),
-        media_type="text/event-stream",
-        headers={
-            "Cache-Control": "no-cache",
-            "Connection": "keep-alive",
-            "Access-Control-Allow-Origin": "*",
-            "X-Accel-Buffering": "no"
-        }
-    )
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=4999, log_level="info")
+# @app.post("/")
+# async def call_api(request: Request):
+#     messages = await request.json()
+#     message = messages['messages']
+#     return StreamingResponse(
+#         chat(message),
+#         media_type="text/event-stream",
+#         headers={
+#             "Cache-Control": "no-cache",
+#             "Connection": "keep-alive",
+#             "Access-Control-Allow-Origin": "*",
+#             "X-Accel-Buffering": "no"
+#         }
+#     )
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=4999, log_level="info")
